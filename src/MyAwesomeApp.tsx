@@ -23,7 +23,7 @@ export function MyAwesomeApp() {
         backgroundColor: 'red',
         color: 'white',
         padding: '10px',
-        borderRadius: '5px',
+        borderRadius: isActive ? 10 : 20,
         border: '1px solid black'
       }}>{JSON.stringify(address)}</p>
     </>
