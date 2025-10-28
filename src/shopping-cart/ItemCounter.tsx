@@ -20,6 +20,9 @@ export const ItemCounter = ({name}: Props) => {
         {name}
       </span>
       <button
+        onMouseEnter={() => {
+          console.log(`mouse enter ${name}`);
+        }}
         onClick={(event) => {
           console.log(event);
           console.log(`click ${name}`);
