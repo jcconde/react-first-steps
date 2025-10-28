@@ -20,7 +20,8 @@ export const ItemCounter = ({name}: Props) => {
         {name}
       </span>
       <button
-        onClick={() => {
+        onClick={(event) => {
+          console.log(event);
           console.log(`click ${name}`);
         }}
       >+1</button>
